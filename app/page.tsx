@@ -50,7 +50,7 @@ export default function Home() {
       </div>
       <section>
         <div className="mx-auto max-w-xl py-8 mb-8">
-          <h2 className="mb-8 text-center text-2xl font-black">
+          <h2 className=" text-center text-2xl font-black">
             What I have learned in the past...
           </h2>
           {posts.map((post: any, idx: any) => (
