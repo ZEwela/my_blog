@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -24,4 +24,28 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+
+.post {
+  font-size: medium;
+  font-weight: 300;
+}
+.post h2 {
+  font-size: x-large;
+  font-weight: 500;
+}
+.post h3 {
+  font-size: large;
+  font-weight: 400;
+}
+.post {
+  line-height: 190%;
+}
+.post img {
+  height: 200px;
+  width: 200px;
+}
+.post ul {
+  margin-left: 1rem;
+  list-style: disc;
 }
