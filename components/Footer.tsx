@@ -4,9 +4,9 @@ import { BsPersonCircle } from "react-icons/bs";
 
 function Footer() {
   return (
-    <footer className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl">
+    <footer className=" ">
       <hr className="w-full h-0.5 mx-auto mt-8 bg-neutral-200 border-0" />
-      <div className="mx-auto p-4 flex flex-col text-center text-neutral-400 md:flex-row md:justify-between">
+      <div className="mx-auto  w-2/3 p-4 flex flex-col text-center text-neutral-400 md:flex-row md:justify-between px-4">
         <div>@ 2023 Ewelina Zawol</div>
         <div className="flex flex-row items-center justify-center space-x-2 mb-1">
           <a

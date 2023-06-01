@@ -15,10 +15,10 @@ The XOR operation follows a simple rule:
 To illustrate this, consider the following:
 
 Input A&emsp;&emsp;Input B&emsp;&emsp;Output  
-&emsp;0&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;0&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;0  
+&emsp;0&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;0&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;0  
 &emsp;0&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;1&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;1  
-&emsp;1&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;0&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1  
-&emsp;1&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;1&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;0
+&emsp;1&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;0&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;1  
+&emsp;1&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;1&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;0
 
 ## Applications of XOR
 
@@ -55,8 +55,8 @@ function findNonDuplicateNumber(nums) {
 
 const nums = [4, 2, 1, 2, 1];
 const nonDuplicate = findNonDuplicateNumber(nums);
-console.log("Non-duplicate number:", nonDuplicate);
-output: 4;
+console.log("Non-duplicate number: ", nonDuplicate);
+output: Non-duplicate number: 4;
 ```
 
 In this example, the findNonDuplicateNumber function uses XOR to iterate through the array and find the non-duplicate number. The XOR operation cancels out the duplicate numbers, leaving only the non-duplicate number as the final result.

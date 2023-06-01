@@ -25,27 +25,48 @@ body {
     )
     rgb(var(--background-start-rgb));
 } */
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.05rem;
+}
+body {
+  background-color: rgb(247, 245, 229);
+}
+
+/* The article fills all the space between header & footer */
+body {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}
 
 .post {
   font-size: medium;
-  font-weight: 300;
+  font-weight: 400;
 }
 .post h2 {
   font-size: x-large;
   font-weight: 500;
+  padding-top: 2rem;
 }
 .post h3 {
   font-size: large;
   font-weight: 400;
+  padding: 1rem 0 1rem 0;
 }
 .post {
-  line-height: 190%;
+  line-height: 180%;
 }
 .post img {
   height: 200px;
   width: 200px;
 }
 .post ul {
-  margin-left: 1rem;
+  margin-left: 2rem;
   list-style: disc;
 }

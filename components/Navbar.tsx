@@ -9,7 +9,10 @@ function Navbar() {
   return (
     <>
       <header className=" flex justify-between content-center  p-2 dark:border-b dark:border-stone-600 ">
-        <Link className="text-xl my-auto" href="/">
+        <Link
+          className="text-xl my-auto bg-neutral-200 p-2 rounded-xl text-black hover:bg-neutral-300"
+          href="/"
+        >
           Ewelina Zawol
         </Link>
         <div>
@@ -18,14 +21,14 @@ function Navbar() {
               onClick={() => {
                 setTheme("light");
               }}
-              className="bg-slate-200 p-2 rounded-xl"
+              className="bg-neutral-200 p-2 rounded-xl  hover:bg-neutral-300"
             >
               <RiSunLine size={25} color="black" />
             </button>
           ) : (
             <button
               onClick={() => setTheme("dark")}
-              className="bg-slate-200 p-2 rounded-xl"
+              className="bg-neutral-200 p-2 rounded-xl  hover:bg-neutral-300"
             >
               <RiMoonFill size={25} />
             </button>
