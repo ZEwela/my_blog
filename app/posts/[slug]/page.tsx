@@ -9,19 +9,16 @@ export const generateMetadata = ({ params }: { params: { slug: string } }) => {
     const post = allPosts.find(
       (post) => post._raw.flattenedPath === params.slug
     );
-    if (!post)
-      return {
-        title: "Not Found",
-      };
-    return { title: post.title };
+    if (post) return { title: post.title };
   } catch (error) {
-    console.log(error);
+    console.log("FROM Catch", error);
     throw new Error("Something went wrong");
   }
 };
 
 const PostLayout = ({ params }: { params: { slug: string } }) => {
   const post = allPosts.find((post) => post._raw.flattenedPath === params.slug);
+  console.log("FROM POSTLAYOUT");
   if (!post) throw new Error(`Post not found for slug: ${params.slug}`);
 
   return (
