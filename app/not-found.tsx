@@ -5,7 +5,7 @@ export default function NotFound() {
     <>
       <div className="container">
         <div className="row">
-          <div className=" content-center flex justify-between my-5   px-20">
+          <div className=" content-center flex justify-between my-5  flex-col flex-wrap">
             <h2>Page Not Found</h2>
             <Link
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold p-1 opacity-75 rounded content-center justify-center"

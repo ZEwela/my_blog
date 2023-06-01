@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 
-function GlobalError({ error, reset }: { error: Error; reset: () => void }) {
+function Error({ error, reset }: { error: Error; reset: () => void }) {
   return (
     <div className="grid min-h-full place-items-center px-6 py-24 sm:py-32 lg:px-8">
       <div className="text-center">
@@ -35,4 +35,4 @@ function GlobalError({ error, reset }: { error: Error; reset: () => void }) {
   );
 }
 
-export default GlobalError;
+export default Error;
