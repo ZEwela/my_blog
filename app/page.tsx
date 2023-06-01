@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { compareDesc, format, parseISO } from "date-fns";
 import { allPosts } from "contentlayer/generated";
+export const metadata = {
+  title: "Ewelina Zawol",
+};
 
 export default function Home() {
   let posts = allPosts.sort(
