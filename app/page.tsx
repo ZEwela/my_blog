@@ -21,7 +21,9 @@ export default function Home() {
   const today = new Date().toLocaleDateString("en-US", options);
   const fromToday =
     format(parseISO(posts[0].date), "LLLL d, yyyy") !== today ? false : true;
+  let todayPost = null;
   if (fromToday) {
+    todayPost = posts[0];
     posts = posts.slice(1);
   }
 
@@ -41,11 +43,11 @@ export default function Home() {
           ) : (
             <section className="mx-auto max-w-2xl py-8 mb-8 post">
               <div className="text-3xl font-bold text-center my-3">
-                {posts[0].title}
+                {todayPost!.title}
               </div>
               <div
                 className="[&>*]:mb-3 [&>*:last-child]:mb-0"
-                dangerouslySetInnerHTML={{ __html: posts[0].body.html }}
+                dangerouslySetInnerHTML={{ __html: todayPost!.body.html }}
               />
             </section>
           )}
