@@ -18,9 +18,11 @@ export default function Home() {
     day: "numeric",
     year: "numeric",
   };
-  const today = new Date().toLocaleDateString("en-US", options);
+  const today = () => {
+    return new Date().toLocaleDateString("en-US", options);
+  };
   const fromToday =
-    format(parseISO(posts[0].date), "LLLL d, yyyy") !== today ? false : true;
+    format(parseISO(posts[0].date), "LLLL d, yyyy") !== today() ? false : true;
   let todayPost = null;
   if (fromToday) {
     todayPost = posts[0];
@@ -33,7 +35,7 @@ export default function Home() {
         <h1 className="mb-8 text-center text-3xl font-black">
           What I have learned today...
         </h1>
-        <p className="text-s text-center ">{today}</p>
+        <p className="text-s text-center ">{today()}</p>
         <div className="mb-8 ">
           {!fromToday ? (
             <div className="mx-auto max-w-2xl py-16 mb-8 text-center text-lg ">
