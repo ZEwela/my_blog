@@ -1,6 +1,6 @@
 ---
 title: Exploring Depth and Breadth - Traversing a Binary Tree
-date: 2023/06/02
+date: 2023/06/05
 ---
 
 Binary trees are fascinating data structures that offer various ways to explore and process their nodes. Traversing a binary tree refers to visiting each node in a specific order, enabling us to access or manipulate the data they hold. In this short post, let's delve into two traversal techniques: depth-first traversal and breadth-first traversal.
