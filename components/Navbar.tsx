@@ -15,7 +15,13 @@ function Navbar() {
         >
           Ewelina Zawol
         </Link>
-        <div>
+        <div className="flex flex-row justify-center items-center gap-4">
+          <Link
+            className="text-xl bg-neutral-200 p-2 rounded-xl text-black hover:bg-neutral-300 "
+            href="https://portfolio-zewela.vercel.app/"
+          >
+            Portfolio
+          </Link>
           {currentTheme === "dark" ? (
             <button
               onClick={() => {

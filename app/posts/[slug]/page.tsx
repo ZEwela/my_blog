@@ -1,5 +1,6 @@
 import { format, parseISO } from "date-fns";
 import { allPosts } from "contentlayer/generated";
+import Link from "next/link";
 
 export const generateStaticParams = async () =>
   allPosts.map((post) => ({ slug: post._raw.flattenedPath }));
@@ -34,6 +35,14 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
           dangerouslySetInnerHTML={{ __html: post.body.html }}
         />
       </article>
+      <div className="text-center">
+        <Link
+          className="text-lg bg-neutral-300 p-2 rounded-xl text-black hover:bg-neutral-400 "
+          href="/"
+        >
+          Go back to main
+        </Link>
+      </div>
     </div>
   );
 };
